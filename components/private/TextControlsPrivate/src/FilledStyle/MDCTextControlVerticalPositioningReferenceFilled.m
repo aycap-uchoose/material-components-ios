@@ -134,9 +134,9 @@ static const CGFloat kMaxPaddingAroundAssistiveLabels = 6.0f;
       _paddingBetweenContainerTopAndNormalLabel =
           halfOfHeightWithOneRow - halfOfNormalFontLineHeight;
     } else {
-      CGFloat halfOfContainerHeight = (CGFloat)0.5 * _containerHeightWithFloatingLabel;
+      CGFloat ratioOfContainerHeight = (CGFloat)0.7 * _containerHeightWithFloatingLabel;
       _paddingBetweenContainerTopAndNormalLabel =
-          halfOfContainerHeight - halfOfNormalFontLineHeight;
+          ratioOfContainerHeight - halfOfNormalFontLineHeight;
     }
   }
   return self;
