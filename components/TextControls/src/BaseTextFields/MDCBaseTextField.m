@@ -532,11 +532,11 @@ static char *const kKVOContextMDCBaseTextField = "kKVOContextMDCBaseTextField";
 #pragma mark Fonts
 
 - (UIFont *)normalFont {
-  return self.font ?: MDCTextControlDefaultUITextFieldFont();
+  return self.label.font ?: MDCTextControlDefaultUITextFieldFont();
 }
 
 - (UIFont *)floatingFont {
-  return [self.containerStyle floatingFontWithNormalFont:self.normalFont];
+  return self.label.font ?: MDCTextControlDefaultUITextFieldFont();
 }
 
 #pragma mark Dynamic Type
